@@ -7,6 +7,7 @@
     <router-link :to="{ path: '/slot' }">插槽</router-link>&nbsp;
     <router-link :to="{ path: '/shallow' }">shallowRef</router-link>&nbsp;
     <router-link :to="{ path: '/teleport' }">teleport</router-link>&nbsp;
+    <router-link :to="{ path: '/lifeCycle' }">父子组件的生命周期的执行</router-link>&nbsp;
     <div class="main_container">
       <h3>（一级路由容器）</h3>
       <RouterView />

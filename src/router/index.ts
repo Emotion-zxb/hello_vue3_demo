@@ -7,11 +7,12 @@ import details from "@/views/details.vue";
 import Slot from "@/views/Slot.vue";
 import ShallowRef from "@/views/ShallowRef.vue";
 import Teleport from "@/views/Teleport.vue";
+import LifeCycle from "@/views/LifeCycle.vue";
 
 const routes = [
   {
-    path: '/',
-    redirect: '/home'
+    path: "/",
+    redirect: "/home",
   },
   { path: "/home", component: HomeView, name: "zhuye" }, // 命名路由 name
   { path: "/about", component: AboutView, name: "guanyu" },
@@ -25,24 +26,28 @@ const routes = [
         path: "details/:title",
         component: details,
         name: "xiangqing",
-        props(route:any) {
-          return route.params
+        props(route: any) {
+          return route.params;
           // return route.query
-        }
+        },
       },
     ],
   },
   {
-    path: '/slot',
-    component: Slot
+    path: "/slot",
+    component: Slot,
   },
   {
-    path: '/shallow',
-    component: ShallowRef
+    path: "/shallow",
+    component: ShallowRef,
   },
   {
-    path: '/teleport',
-    component: Teleport
+    path: "/teleport",
+    component: Teleport,
+  },
+  {
+    path: "/lifeCycle",
+    component: LifeCycle,
   },
 ];
 
